@@ -2,8 +2,11 @@ import React from 'react';
 import {IndexRoute, Route} from 'react-router';
 // import { isLoaded as isAuthLoaded, load as loadAuth } from 'redux/modules/auth';
 import {
-  Dashboard
+  Dashboard,
+  Login
   } from 'alluminate/containers';
+
+  console.log(Login);
 
 export default () => {
   // const requireLogin = (nextState, replace, cb) => {
@@ -27,9 +30,10 @@ export default () => {
    * Please keep routes in alphabetical order
    */
   return (
-    <Route path="/" component={Dashboard}>
+    <Route path="/" component={Login}>
       { /* Home (main) route */ }
-      <IndexRoute component={Dashboard}/>
+      <IndexRoute component={Login}/>
+      <Route path="/login" component={Login} />
     </Route>
   );
 };
