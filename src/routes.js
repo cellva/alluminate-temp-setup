@@ -2,7 +2,8 @@ import React from 'react';
 import {IndexRoute, Route} from 'react-router';
 // import { isLoaded as isAuthLoaded, load as loadAuth } from 'redux/modules/auth';
 import {
-  Dashboard
+  Dashboard,
+  Empty
   } from 'alluminate/containers';
 
 export default () => {
@@ -27,9 +28,11 @@ export default () => {
    * Please keep routes in alphabetical order
    */
   return (
-    <Route path="/" component={Dashboard}>
+    <Route path="/" component={Empty}>
       { /* Home (main) route */ }
-      <IndexRoute component={Dashboard}/>
+      <IndexRoute component={Empty}/>
+      <Route path="/dashboard" component={Dashboard}/>
+      {/* <Route path="/sector" component={Sector}/> */}
     </Route>
   );
 };

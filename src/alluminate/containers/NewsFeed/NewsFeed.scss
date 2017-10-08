@@ -1,0 +1,63 @@
+.newsFeedContainer {
+  width: 75%;
+  margin: auto;
+  hr {
+    border-bottom: 2px solid #444;
+    margin: 0 0 3rem 0;
+    width: 96%;
+  }
+  .header {
+    position: relative;
+    .colHeader {
+      min-height: 65px;
+    }
+    .title {
+      width: 147px;
+      height: 35px;
+      color: #ffffff;
+      font-family: "Open Sans";
+      font-size: 27px;
+      font-weight: 300;
+      float: left;
+    }
+    .moreNews {
+      border: 1px solid #8093ff;
+      width: 134px;
+      height: 32px;
+      margin-right: 6rem;
+      float: right;
+      position: absolute;
+      bottom: 17px;
+      right: 0;
+      text-align: center;
+      .label {
+        width: 74px;
+        height: 19px;
+        color: #8093ff;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 400;
+        position: absolute;
+        top: 6px;
+        left: 30px;
+      }
+    }
+  }
+  .feedContainer {
+    margin: 2rem 0 2rem 0;
+    .feed {
+      display: grid;
+      margin-bottom: 10px;
+      a {
+        color: #8093ff;
+        font-size: 16px;
+        font-weight: 400;
+      }
+      span {
+        color: #706928;
+        font-size: 13px;
+        font-weight: 400;
+      }
+    }
+  }
+}

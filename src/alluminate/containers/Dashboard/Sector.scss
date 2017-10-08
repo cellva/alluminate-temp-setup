@@ -1,0 +1,116 @@
+.sectorContainer {
+  width: 75%;
+  margin: auto;
+  margin-bottom: 20px;
+  .sectorDescriptionContainer {
+    min-height: 100px;
+    width: 97%;
+    border-bottom: 2px solid #444;
+    .description {
+      float: left;
+      .sectorTitle {
+        width: 251px;
+        margin-bottom: 0;
+        height: 37px;
+        color: #ffffff;
+        font-family: "Open Sans";
+        font-size: 27px;
+        font-weight: 300;
+        .message {
+          width: 193px;
+          height: 22px;
+          color: #afaf97;
+          font-family: "Open Sans";
+          font-size: 16px;
+          font-weight: 300;
+        }
+      }
+    }
+    .sort {
+      float: right;
+      margin-top: 4%;
+      .label {
+        height: 22px;
+        width: 51px;
+        color: #afaf97;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 300;
+      }
+    }
+  }
+ .subSectorContainer {
+   width: 100%;
+   min-height: 800px;
+   margin-top: 20px;
+   padding-right: 20px;
+   overflow-y: hidden;
+   .card {
+     width: 100%;
+     float: left;
+     height: 250px;
+     .cardDetail {
+       padding: 15px;
+       width: 90%;
+       float: left;
+       height: 218px;
+       border: 1px solid #403b0d;
+       background-color: #111111;
+       .label {
+         min-height: 30px;
+         color: #8093ff;
+         font-size: 16px;
+         font-weight: 600;
+       }
+       .value {
+         min-height: 35px;
+         color: #ffffff;
+         font-size: 20px;
+         font-weight: 300;
+       }
+       .growth {
+         min-height: 45px;
+         padding: 4px 0;
+         height: 33px;
+         font-size: 24px;
+         font-weight: 300;
+         .indicator {
+           padding: 4px 4px 0;
+           height: 27px;
+           font-size: 27px;
+           font-weight: 400;
+         }
+       }
+       .coinsContainer {
+         width: 100%;
+         position: relative;
+         min-height: 100px;
+         .logoWrapper {
+           width: 30px;
+           height: 30px;
+           margin: .28rem;
+           float: left;
+          img {
+            border-radius: 50%;
+            width: 28px;
+          }
+         }
+         .remainingCoins {
+           width: 70px;
+           height: 30px;
+           font-size: 11px;
+           color: #666666;
+           font-weight: 700;
+           font-family: "Open Sans";
+           display: table-cell;
+           vertical-align: bottom;
+           padding-left: 15px;
+           position: absolute;
+           bottom: 0;
+           right: 0;
+         }
+       }
+     }
+   }
+ }
+}

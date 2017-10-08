@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
 
-
 const style = require('./Header.scss');
+
 export default class Header extends Component {
   render() {
     return (

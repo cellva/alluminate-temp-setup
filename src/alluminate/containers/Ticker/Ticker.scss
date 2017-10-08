@@ -1,0 +1,52 @@
+.tickerContainer {
+  width: 100%;
+  background-color: #111;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  border: 1px solid #403b0d;
+  height: 45px;
+  display: flex;
+  .ticker {
+    height: 45px;
+    display: -webkit-inline-box;
+    img {
+      width: 21px;
+      height: 21px;
+      border-radius: 50%;
+      margin: 10px;
+    }
+    .separater {
+      border: 1px solid #403b0d;
+      width: 3px;
+      height: 38px;
+      font-size: 30px;
+    }
+    .coin {
+      color: #fff300;
+      font-size: 13px;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-right: 20px;
+    }
+    .value {
+      color: #ffffff;
+      font-family: "Open Sans";
+      font-size: 13px;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-right: 15px;
+    }
+    .growth {
+      color: #00e664;
+      font-size: 18px;
+      font-weight: 400;
+      margin-right: 5px;
+    }
+    .percentage {
+      color: #00e664;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 300;
+      margin-right: 15px;
+    }
+  }
+}
