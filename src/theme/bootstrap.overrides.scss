@@ -14,3 +14,58 @@
   color: #33e0ff;
   background-color: transparent;
 }
+
+body {
+  background-color: #000;
+}
+
+.container {
+  width: 100%;
+  padding: 0;
+}
+.sectorCards {
+    position: relative;
+    min-height: 1px;
+    width: 20%;
+    float: left;
+}
+
+.positive {
+  color: #00e664;
+}
+.negative {
+  color: #ed3232;
+}
+.sectorCards {
+
+}
+@media (max-width: 500px){
+.sectorCards {
+        width: 100%;
+        float: left;
+    }
+}
+@media (min-width: 500px) and (max-width: 880px){
+.sectorCards {
+        width: 50%;
+        float: left;
+    }
+}
+@media (min-width: 880px) and (max-width: 992px){
+.sectorCards {
+        width: 33%;
+        float: left;
+    }
+}
+@media (min-width: 992px) and (max-width: 1350px) {
+    .sectorCards {
+        width: 25%;
+        float: left;
+    }
+}
+@media (min-width: 1350px) {
+    .sectorCards {
+        width: 20%;
+        float: left;
+    }
+}

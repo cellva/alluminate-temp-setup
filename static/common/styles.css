@@ -1,23 +1,8 @@
-.header .navbar .container{
-  width: 100% !important;
+body {
+  background-color: #000;
 }
-.header .navbar-nav li{
-  border-left: 1px solid #2f2f2f;
-  border-right: 1px solid #2f2f2f;
-  padding: .7rem 0px;
-}
-.header .navbar-nav li a{
-  font-size: 13px;
-  color: #fff !important;
-  padding: 0 2rem;
-  line-height: 3;
-  outline: none;
-  float: left;
-}
-.header .navbar-nav li a:hover, .header .navbar-nav li a:focus{
-  outline: none;
-  text-decoration: none;
-}
-.header .navbar-brand img {
-  margin-top: -5px;
+
+.container {
+  width: 100%;
+  padding: 0;
 }
