@@ -17,12 +17,13 @@
 
 body {
   background-color: #000;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
-.container {
-  width: 100%;
-  padding: 0;
-}
 .sectorCards {
     position: relative;
     min-height: 1px;
@@ -36,9 +37,7 @@ body {
 .negative {
   color: #ed3232;
 }
-.sectorCards {
 
-}
 @media (max-width: 500px){
 .sectorCards {
         width: 100%;
