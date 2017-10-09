@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
-import {
-  Nav
-} from 'react-bootstrap/lib';
 const style = require('./Header.scss');
 
 export default class Header extends Component {
   render() {
     return (
-      <Nav className={`${style.customNav} navbar navbar-expand-md fixed-top`}>
+      <nav className={`${style.customNav} ${style.fixedTop} navbar`}>
         <div className="navbar-header">
           <button type="button"
             className="navbar-toggle collapsed"
             data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1"
+            data-target="#navbar-collapse"
             aria-expanded="false">
             <span className="sr-only">Toggle navigation</span>
             <span className="icon-bar"></span>
@@ -25,7 +22,7 @@ export default class Header extends Component {
           </a>
         </div>
 
-        <div className="collapse navbar-collapse" id="navbarsExampleDefault">
+        <div className="collapse navbar-collapse" id="navbar-collapse">
           <ul className={`${style.myNavbar} navbar-nav`}>
             <li className="nav-item">
               <a href="#">My Portfolio</a>
@@ -58,7 +55,7 @@ export default class Header extends Component {
             </a>
           </div>
         </div>
-      </Nav>
+      </nav>
     );
   }
 }

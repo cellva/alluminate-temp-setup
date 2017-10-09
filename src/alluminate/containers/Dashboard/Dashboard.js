@@ -21,7 +21,7 @@ export default class Dashboard extends Component {
 class MarketCap extends Component {
   render() {
     return (
-      <div className={style.sectorContainer}>
+      <div className={`${style.sectorContainer} container`}>
         <div className={style.sectorDescriptionContainer}>
           <div className={style.description}>
             <h1 className={style.sectorTitle}>Market Cap (Sector)</h1>
@@ -176,8 +176,12 @@ class SubSectorContiner extends Component {
         <div className={'sectorCards'}>
           <div className={style.card}>
             <div className={style.cardDetail}>
-              <div className={style.label}>{subSector.label}</div>
-              <div className={style.value}>{subSector.value}</div>
+              <div className={style.label}>
+                <p>{subSector.label}</p>
+              </div>
+              <div className={style.value}>
+                <p>{subSector.value}</p>
+              </div>
               <div className={style.growth + (subSector.indicator === 'plus' ? ' positive' : ' negative')}>
                 <span className={style.indicator}>#</span>
                 <span>{subSector.growthValue}%</span>
@@ -197,7 +201,7 @@ class SubSectorContiner extends Component {
     }
 
     return (
-      <div className={style.subSectorContainer}>
+      <div className={`${style.subSectorContainer} col-md-12 col-xs-12`}>
         {populateSubSectorLayout(data)}
       </div>
     );

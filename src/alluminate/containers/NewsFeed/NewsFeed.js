@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-bootstrap/lib';
+import { Grid, Row, Col, Button } from 'react-bootstrap/lib';
 const style = require('./NewsFeed.scss');
 export default class NewsFeed extends Component {
   render() {
@@ -48,7 +48,7 @@ export default class NewsFeed extends Component {
 
     function populateNewsFeeds(feeds) {
       return feeds.map((feed)=>
-      <Col md={6} sm={6} sm={12}>
+      <Col md={6} sm={6} sm={12} className={`${style.p_l_0} ${style.p_r_0}`}>
         <div className={style.feed}>
           <a href="#">{feed.content}</a>
           <span>{feed.time}</span>
@@ -66,14 +66,13 @@ export default class NewsFeed extends Component {
               </h1>
             </Col>
             <Col md={6} sm={6} xs={6} className={style.colHeader}>
-              <div className={style.moreNews}>
-                <span className={style.label}>
-                  More News
-                </span>
+              <div className={`${style.moreNews} text-right`}>
+                <Button className={style.moreNewsBtn}>
+                  More News <i className="fa fa-long-arrow-right" aria-hidden="true" />
+                </Button>
               </div>
             </Col>
           </Row>
-          <hr/>
           <Row className={style.feedContainer}>
             {populateNewsFeeds(data)}
           </Row>
