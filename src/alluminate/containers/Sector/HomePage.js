@@ -3,7 +3,7 @@ import Header from './../Header/Header';
 
 // const style = require('./Dashboard.scss');
 export default class Sector extends Component {
-  const style = require('./Sector.scss');
+  const style = require('./HomePage.scss');
   render() {
     return (
       // <div>
