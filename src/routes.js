@@ -3,6 +3,8 @@ import {IndexRoute, Route} from 'react-router';
 // import { isLoaded as isAuthLoaded, load as loadAuth } from 'redux/modules/auth';
 import {
   Dashboard,
+  // Coin,
+  HomePage,
   Empty
   } from 'alluminate/containers';
 
@@ -32,6 +34,8 @@ export default () => {
       { /* Home (main) route */ }
       <IndexRoute component={Empty}/>
       <Route path="/dashboard" component={Dashboard}/>
+      <Route path="/homepage" component={HomePage}/>
+      {/* <Route path="/coin" component={Coin}/> */}
       {/* <Route path="/sector" component={Sector}/> */}
     </Route>
   );
