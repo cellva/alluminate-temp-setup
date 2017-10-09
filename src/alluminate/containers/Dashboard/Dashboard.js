@@ -3,7 +3,7 @@ import Header from './../Header/Header';
 import NewsFeed from './../NewsFeed/NewsFeed';
 import Ticker from './../Ticker/Ticker';
 
-const style = require('./Sector.scss');
+const style = require('./HomePage.scss');
 export default class Dashboard extends Component {
   render() {
     return (
