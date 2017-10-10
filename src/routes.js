@@ -5,6 +5,7 @@ import {
   Dashboard,
   // Coin,
   HomePage,
+  CoinDetail,
   Empty
   } from 'alluminate/containers';
 
@@ -35,6 +36,7 @@ export default () => {
       <IndexRoute component={Empty}/>
       <Route path="/dashboard" component={Dashboard}/>
       <Route path="/homepage" component={HomePage}/>
+      <Route path="/coindetail" component={CoinDetail}/>
       {/* <Route path="/coin" component={Coin}/> */}
       {/* <Route path="/sector" component={Sector}/> */}
     </Route>

@@ -72,6 +72,9 @@
       color: #929292;
       box-shadow: none;
     }
+    @media (max-width: 991px) {
+      width: 175px !important;
+    }
   }
   button {
     line-height: 1.2;
